@@ -12,7 +12,6 @@ class Anagram
         some_word.join("")
       end
     end
-    answer
   end
   
 end
