@@ -7,8 +7,9 @@ class Anagram
   
   def match(anagrams)
     anagram_array = %w(anagrams)
-    anagram_array.each do |some_word|
-      some_word.split("")
+    anagram_array.select do |some_word|
+      some_word.split("") == word.split("")
+    end
     
   end
   
