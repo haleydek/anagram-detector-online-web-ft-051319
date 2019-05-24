@@ -5,8 +5,8 @@ class Anagram
     @word = word
   end
   
-  def match(anagrams)
-    %w(anagrams).find_all do |some_word|
+  def match(string_of_words)
+    %w(string_of_words).find_all do |some_word|
       some_word.split("").sort == @word.split("").sort
     end
     
