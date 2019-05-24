@@ -6,12 +6,14 @@ class Anagram
   end
   
   def match(string_of_words)
+    answer = []
     string_array = %w(string_of_words)
-    string_array.find_all do |some_word|
+    string_array.each do |some_word|
       if some_word.split("").sort == @word.split("").sort
-        some_word.join("")
+        answer << some_word.join("")
       end
     end
+    answer
   end
   
 end
