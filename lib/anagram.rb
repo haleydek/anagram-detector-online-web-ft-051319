@@ -11,6 +11,7 @@ class Anagram
     string_array.each do |some_word|
       if some_word.split("").sort == @word.split("").sort
         answer << some_word
+      end
     end
     answer
   end
