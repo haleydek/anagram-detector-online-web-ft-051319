@@ -5,10 +5,10 @@ class Anagram
     @word = word
   end
   
-  def match(anagrams)
+  def match(anagrams, word)
     anagram_array = %w(anagrams)
     anagram_array.select do |some_word|
-      some_word.split("").sort == word.split("").sort
+      some_word.split("").sort == @word.split("").sort
     end
     
   end
