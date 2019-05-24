@@ -6,8 +6,8 @@ class Anagram
   end
   
   def match(potential_anagrams)
-    array = %w(potential_anagrams).collect do |some_word|
-      some_word.split().sort
+    %w(potential_anagrams).find_all do |some_word|
+      some_word.split().sort == @word.split().sort
     end
   end
   
