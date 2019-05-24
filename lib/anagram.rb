@@ -7,7 +7,7 @@ class Anagram
   
   def match(anagrams)
     %w(anagrams).find_all do |some_word|
-      some_word.split("") == @word.split("").sort
+      some_word.split("").sort == @word.split("").sort
     end
     
   end
